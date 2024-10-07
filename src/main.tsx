@@ -19,29 +19,29 @@
 // Output: const res = {a: 6, b: 9, c: 12}
 
 
-let obj = {a: 2, b: 3, c: 4}
+// let obj = {a: 2, b: 3, c: 4}
 
-type Obj = {
-  a: number,
-  b: number,
-  c: number
-}
+// type Obj = {
+//   a: number,
+//   b: number,
+//   c: number
+// }
 
-function incNum(n:Obj, m:number) {
-  let result = {}
+// function incNum(n:Obj, m:number) {
+//   let result = {}
     
-  let keys = Object.keys(n)
-  let nums = Object.values(n)
+//   let keys = Object.keys(n)
+//   let nums = Object.values(n)
 
-  nums.forEach((item, ind) => {
+//   nums.forEach((item, ind) => {
     
-    let increasedNums = item * m
-    result[keys[ind]] = increasedNums
+//     let increasedNums = item * m
+//     result[keys[ind]] = increasedNums
 
-  })
-  console.log(result);
-}
-incNum(obj, 3)
+//   })
+//   console.log(result);
+// }
+// incNum(obj, 3)
 
 // =================== ------- ========================
 
@@ -49,20 +49,20 @@ incNum(obj, 3)
 
 // 36.argument sifatida berilgan string da nechta son qatnashganligini aniqlaydigan function tuzing
 
-function findNumsInString(a: number | string) {
+// function findNumsInString(a: number | string) {
   
-  let arr = a.split("")
-  let count = 0
+//   let arr = a.split("")
+//   let count = 0
 
-  arr.forEach(item => {
-    if (!isNaN(item)) {
-      count++
-    }
-  });
-  console.log(count > 1 ? `${count} numbers in this string` : `${count} number in this string`);
+//   arr.forEach(item => {
+//     if (!isNaN(item)) {
+//       count++
+//     }
+//   });
+//   console.log(count > 1 ? `${count} numbers in this string` : `${count} number in this string`);
 
-}
-findNumsInString("salom12")
+// }
+// findNumsInString("salom12")
 
 // =================== ------- ========================
 
